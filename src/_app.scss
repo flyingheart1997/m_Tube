@@ -1,0 +1,24 @@
+@import './base';
+
+.app__container{
+    background-color: $black-primary;
+    display: flex;
+    margin-top: 19vh;
+    margin-bottom: 1rem;
+    
+}
+
+@media (max-width: $breakpoint-medium){
+    .app__container{
+        display: flex;
+        margin-top: 10vh;
+        margin-bottom: 8vh;
+    }
+}
+@media (max-width: $breakpoint-small){
+    .app__container{
+        display: flex;
+        margin-top: 11vh;
+        margin-bottom: 8vh;
+    }
+}

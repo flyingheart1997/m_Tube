@@ -1,0 +1,153 @@
+@import '../../base';    
+
+
+.videoMetaData{
+    // padding-left: 50px;
+    background-color: transparent;
+    margin-top: 5px;
+    &__top{
+        cursor: pointer;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $border-color;
+        h5{
+            font-size: 17px;
+        }
+        h4{
+            margin-top: -3px;
+            letter-spacing: .5px;
+        }
+    }
+
+    &__channel{
+        padding-top: 10px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $border-color;
+        padding-left: 10px;
+        padding-right: 5px;
+        
+        img{
+            height: 50px;
+        }
+        button{
+            font-weight: 400;
+            border-radius: 5px;
+            border: none;
+            padding: 7px 15px;
+            letter-spacing: .5px;
+            color: #fff;
+            background-color: rgba(189, 0, 38, 0.842);
+            &.btn-gray{
+                background-color: gray;
+            }
+            
+            &:hover{
+                transform: scale(1.02);
+            }
+        }
+    }
+    &__description{
+        padding-top: 10px;
+    }
+    .description{
+        font-size: 12px;
+        letter-spacing: .1px;
+        background-color: transparent;
+        padding-left: 20px;
+        padding-right: 50px;
+        font-weight: normal;
+        color: rgb(230, 217, 217);
+    }
+}
+
+@media (max-width: $breakpoint-medium){
+    .videoMetaData{
+        // padding-left: 55px;
+        // padding-right: 55px;
+        padding-right: 5px;
+        &__top{
+            h5{
+                padding-left: 7px;
+            }
+            h4{
+                padding-left: 7px;
+            }
+        }
+        &__channel{
+            padding-left: 9px;
+            padding-right: 5px;
+        }
+        
+    }
+}
+
+
+@media (max-width: $breakpoint-small){
+    .videoMetaData{
+        // padding-left: 5px;
+        // padding-right: 5px;
+        &__top{
+            padding-left: 5px;
+            .icons{
+                padding: 0 !important;
+                margin-top: 5px;
+            }
+            h5{
+                font-size: 13px !important;
+                padding-left: 0px;
+            }
+            h4{
+                padding-left: 0px;
+            }
+            span{
+                display: none;
+            }
+            
+        }
+    }
+}
+
+@media (max-width: $breakpoint-eSmall){
+    .videoMetaData{
+        padding-left: 0;
+        padding-right: 0;
+        &__top{
+            h5{
+                font-size: 12px !important;
+            }
+            .icons{
+                margin-left: -10px;
+                margin-right: -10px;
+            }
+            span{
+                display: none;
+            }
+        }
+        &__channel{
+            font-size: 12px;
+            margin-left: -5px;
+            margin-right: -5px;
+            
+            img{
+                width: 30px;
+                height: 30px;
+                
+            }
+            span{
+                margin-top: -5px;
+                margin-left: -5px;
+
+            }
+            button{
+                font-weight: 100;
+                border-radius: 5px;
+                border: none;
+                margin-right: -5px !important;
+                padding: 5px 9px;
+                color: #fff;
+                background-color: rgba(189, 0, 38, 0.842);
+            }
+        }
+
+    }
+}

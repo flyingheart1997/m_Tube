@@ -1,0 +1,106 @@
+@import '../../base';
+
+// .searchScreen__channel{
+//     height: 30vh;
+//     align-items: center !important;
+//     justify-content: space-between;
+//     margin-bottom: 30px;
+//     .searchScreen__img{
+//         align-items: center;
+//         padding: 30px 50px 50px 50px;
+//         img{
+//             width: 170px;
+//         }
+//         span{
+//             margin-top: 50px;
+//             margin-left: 20px;
+//         }
+//         button{
+//             font-weight: 100;
+//             border-radius: 5px;
+//             border: none;
+//             margin-right: -5px !important;
+//             padding: 5px 9px;
+//             color: #fff;
+//             background-color: rgba(189, 0, 38, 0.842);
+//         }
+//     }
+// }
+
+// @media (max-width: $breakpoint-medium){
+//     .searchScreen__channel{
+//         height: 20vh;
+//         align-items: center;
+//         .searchScreen__img{
+//             align-items: center;
+//             padding: 30px 50px 50px 50px;
+//             padding-top: 0 !important;
+//             .koushik{
+//                 margin-top: 20px;
+//                 img{
+//                     width: 170px;
+//                     height: 170px;
+//                     border-radius: 100px;
+//                 }
+//                 span{
+//                     margin-top: 40px;
+//                     margin-left: 10px;
+//                 }
+//             }
+//             button{
+//                 font-weight: 100;
+//                 border-radius: 5px;
+//                 border: none;
+//                 margin-right: -5px !important;
+//                 padding: 5px 9px;
+//                 color: #fff;
+//                 background-color: rgba(189, 0, 38, 0.842);
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: $breakpoint-small){
+//     .searchScreen__channel{
+//         height: 45vh !important;
+//         align-items: center;
+//         border-bottom: 2px solid $border-color;
+//         .searchScreen__img{
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             padding-left: 10px;
+//             padding-right: 10px;
+//             .koushik{
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: center;
+//                 img{
+//                     width: 100px;
+//                     height: 100px;
+//                     border-radius: 100px;
+//                 }
+//                 ._spa{
+//                     font-size: 20px !important;
+//                     margin-top: -10px !important;
+//                 }
+//                 ._span{
+//                     margin-left: 30px;
+//                     font-size: 15px !important;
+//                 }._spans{
+//                     margin-left: 50px;
+//                     font-size: 15px !important;
+//                 }
+//             }
+//             button{
+//                 font-weight: 100;
+//                 border-radius: 5px;
+//                 border: none;
+//                 margin-top: 10px;
+//                 padding: 5px 9px;
+//                 color: #fff;
+//                 background-color: rgba(189, 0, 38, 0.842);
+//             }
+//         }
+//     }
+// }

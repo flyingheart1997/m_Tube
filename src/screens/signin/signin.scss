@@ -1,0 +1,57 @@
+
+
+.login {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: transparent;
+    height: 100vh;
+    right: 0;
+    font-weight: 500;
+    text-align: center;
+    place-items: center;
+
+    &__content {
+        height: 320px;
+        width: 300px;
+        border: 3px solid rgb(11, 127, 221);
+        padding-top: 20px;
+        border-radius: 10px;
+        background: white;
+        box-shadow: 0 0px 30px rgba(233, 226, 226, 0.575);
+        img{
+            width: 140px;
+            margin-top: 30px;
+        }
+        p {
+            font-weight: 600;
+            font-size: large;
+
+            color: rgb(15, 12, 150);
+
+        }
+        h4{
+            margin-top: 30px;
+            color: #466997;
+        }
+        Button {
+                margin-top: 20px;
+                padding: 10px 30px 10px 30px;
+                background-color: #466997;
+                &:hover{
+                    background-color: rgb(110, 14, 110);
+                }
+            }
+
+        &:hover{
+            transform: scale(1.005);
+        }
+    }
+}
+
+.login__profile{
+    width: 70px;
+    border-radius: 40px;
+}
+

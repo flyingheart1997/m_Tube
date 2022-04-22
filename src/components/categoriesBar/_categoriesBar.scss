@@ -1,0 +1,68 @@
+@import '../../base';
+
+.CategoriesBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $black-secondary;
+    overflow-x: scroll;
+    scroll-behavior: auto;
+    padding: 1rem 2rem 0rem 2rem;
+    width: 100%;
+    height: 12vh;
+    top: 16.9vh;
+    left: 0;
+    right: 0;
+    position: fixed;
+    border-bottom: 2px solid $border-color;
+    transition-duration: 0.15s;
+    transition-timing-function: cubic-bezier(0.05,0,0,1);
+    will-change: transform;
+    white-space: nowrap;
+    &::-webkit-scrollbar{
+        width: 0;
+    }
+
+    span{
+        margin-right: 1rem;
+        padding: .1rem 1.5rem .1rem 1.5rem;
+        white-space: nowrap;
+        border: 1.5px solid $border-color;
+        border-radius: 999px;
+        cursor: pointer;
+       
+
+        &:hover{
+            background: $border-color;
+            color: #FFF;
+        }
+
+        &.active{
+            color: aliceblue;
+            background:  $border-color;
+            border-block-end-color: chartreuse;
+            // border-right-color: chartreuse;
+            border-block-end-width: 2px;
+        }
+    }
+
+}
+
+@media (max-width: $breakpoint-medium){
+    .CategoriesBar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $black-secondary;
+        padding: .5rem 1rem 0 1rem;
+        width: 100%;
+        height: 10vh;
+        top: 9.5vh;
+        left: 0;
+        right: 0;
+        position: fixed;
+        border-top: 1px solid $border-color;
+    
+    }
+    
+}

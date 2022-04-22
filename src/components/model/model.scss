@@ -1,0 +1,71 @@
+@import '../../base';    
+
+.model{
+    .input{
+        width: 330px !important;
+        p{
+            font-size: 12px !important;
+            button::before{
+                content: "Copied";
+                position: absolute;
+                top:15px;
+                left: 15px;
+                color: white;
+                font-size: 15px;
+                display: none;
+            }
+            button::before{
+                content: "";
+                position: absolute;
+                top:15px;
+                left: 15px;
+                color: white;
+                font-size: 15px;
+                display: none;
+            }
+            .active button::before,
+            .active button::before{
+                content: "";
+                position: absolute;
+                top:15px;
+                left: 15px;
+                color: white;
+                font-size: 15px;
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-medium){
+    .model{
+        .input{
+            width: 330px !important;
+            p{
+                font-size: 12px !important;
+            }
+        }
+    }
+}
+@media (max-width: $breakpoint-small){
+    .model{
+        .input{
+            width: 290px !important;
+            p{
+                font-size: 10.5px !important;
+                padding-top: 1px;
+            }
+        }
+    }
+}
+@media (max-width: $breakpoint-eSmall){
+    .model{
+        .input{
+            width: 230px !important;
+            p{
+                font-size: 8px !important;
+                padding-top: 4px;
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+@import '../../base';
+
+.channel{
+    display: flex;
+    flex-direction: column;
+    .channel__detail{
+        display: flex;
+        flex-direction: row;
+        padding: 0 30px;
+        padding-bottom: 20px !important;
+        border-bottom: 2px solid $border-color;
+        img{
+            width: 200px;
+        }
+        .span1{
+            margin-top: 40px;
+            margin-left: 10px;
+            font-size: 2.5rem !important;
+        }
+        .span2{
+            margin-left: 10px;
+            font-size: 1.2rem !important;
+        }
+        .span3{
+            margin-left: 10px;
+            font-size: 1.2rem !important;
+        }
+        button{
+            font-weight: 400;
+            border-radius: 5px;
+            border: none;
+            padding: 7px 15px;
+            letter-spacing: .5px;
+            color: #fff;
+            background-color: rgba(189, 0, 38, 0.842);
+            &.btn-gray{
+                background-color: gray;
+            }
+            
+            &:hover{
+                transform: scale(1.02);
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-small){
+    .channel{
+        display: flex;
+        flex-direction: column;
+        .channel__detail{
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            gap: 3px !important;
+            padding-bottom: 20px !important;
+            border-bottom: 2px solid $border-color;
+            img{
+                width: 70px;
+                height: 70px;
+            }
+            .span1{
+                margin-top: -5px;
+                margin-left: 5px;
+                font-size: 1.5rem !important;
+            }
+            .span2{
+                margin-top: 0px;
+                margin-left: 5px;
+                font-size: .8rem !important;
+            }
+            .span3{
+                margin-top: 0px;
+                margin-left: 5px;
+                font-size: .8rem !important;
+            }
+            button{
+                margin-top: 20px;
+                font-weight: 400;
+                border-radius: 5px;
+                border: none;
+                padding: 7px 35px;
+                letter-spacing: .5px;
+                color: #fff;
+                background-color: rgba(189, 0, 38, 0.842);
+                &.btn-gray{
+                    background-color: gray;
+                }
+                
+                &:hover{
+                    transform: scale(1.02);
+                }
+            }
+        }
+    }
+}

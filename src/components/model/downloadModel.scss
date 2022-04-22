@@ -1,0 +1,13 @@
+@import '../../base';   
+
+.overlayDownload{
+    .downloadModel{
+        p{
+            border: 1px solid $border-color;
+            color: $text-color;
+        }
+        p:hover{
+            background: rgba(210, 52, 84, 0.635);
+        }
+    }
+}

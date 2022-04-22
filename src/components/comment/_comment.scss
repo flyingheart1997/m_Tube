@@ -1,0 +1,83 @@
+@import '../../base';  
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    
+    &_info{
+        display: flex;
+        flex-direction: row;
+        gap: .7rem;
+        padding: 7px 0;
+        
+        .user__comment{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            h6{
+                cursor: pointer;
+                margin-top: 0px;
+                font-size: 14px;
+                color:rgba(230, 216, 216, 0.979);
+            }
+            
+            p{
+                margin-top: -10px;
+                font-size: 10px;
+                color: $text-color;
+            }
+            h4{
+                margin-top: -10px;
+                // padding-left: 50px;
+                font-size: 13px;
+                color: #fff;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                
+            }
+        }
+    }
+    
+    
+}
+
+
+
+@media (max-width: $breakpoint-medium){
+    .comment{
+        &_info{
+            .user__comment{
+                display: flex;
+                flex-direction: column;
+                width: 85%;
+                h6{
+                    
+                    font-size: 13px;
+                }
+                
+                h4{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}@media (max-width: $breakpoint-eSmall){
+    .comment{
+        &_info{
+            .user__comment{
+                display: flex;
+                flex-direction: column;
+                h6{
+                    
+                    font-size: 13px;
+                }
+                
+                h4{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

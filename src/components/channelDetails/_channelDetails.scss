@@ -1,0 +1,90 @@
+@import '../../base';
+
+.channelVideo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 10px 0 10px;
+    box-shadow: 2px 5px 10px #000;
+    cursor: pointer;
+    &__top{
+        img{
+            width: 100%;
+            cursor: pointer;
+        }
+        
+        span{
+            display: inline-block;
+            margin-top: -29px;
+            margin-bottom: 30px;
+            right: 0;
+            padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+            background: #3a343473;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        
+    }
+
+    &__channel{
+        display: flex;
+        align-items: center;
+        margin-top: -10px;
+        
+        img{
+            width: 40px;
+            border-radius: 100%;
+            margin-left: .01rem;
+            margin-top: -10px;
+        }
+        p{
+            display: flex;
+            margin-left: .4rem !important;
+            margin-top: -20px;
+            font-size: 1rem;
+            text-overflow: ellipsis !important;
+            overflow: hidden !important;
+            white-space: nowrap !important;
+            font-weight: 500;
+            letter-spacing: .5px;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+    
+    &__title{
+        margin-left: 2.9rem;
+        font-size: .6rem;
+        margin-top: 5px;
+        display: block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        line-height: .9rem;
+        color: $text-color;
+    }
+
+    &__details{
+        display: flex;
+        margin-left: 2.9rem;
+        margin-top: -22px;
+        font-size: .5rem;
+        gap: 5px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        align-items: center;
+        justify-content: sb;
+
+        span{
+            letter-spacing: 1px;
+        }
+    }
+
+}
+
+@media (max-width: $breakpoint-small){
+    .channelVideo{
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}
